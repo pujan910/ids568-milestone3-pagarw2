@@ -59,3 +59,11 @@ Monitoring strategy:
 - continue logging metrics in MLflow
 - trigger alerts if accuracy drops below the validation threshold
 - retrain the model periodically if performance decreases.
+
+## Reproducibility
+
+The pipeline is designed to be reproducible across environments. All dependencies are pinned in `requirements.txt` and automatically installed during CI execution. The training process accepts a seed parameter which ensures deterministic dataset generation and model training. Each experiment run is tracked by MLflow with recorded parameters, metrics, and artifacts, allowing experiments to be reproduced exactly.
+
+## Operational Reliability
+
+The pipeline incorporates several mechanisms to ensure operational reliability. The Airflow DAG defines clear task dependencies between preprocessing, training, and registration steps. Retry logic and failure callbacks are configured to handle transient execution failures. The CI/CD workflow automatically executes the pipeline on each commit, ensuring that any changes to the codebase are validated immediately. The validation script acts as a quality gate, preventing pipelines from passing if the model does not produce the expected performance metric.
