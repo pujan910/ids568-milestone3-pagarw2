@@ -27,3 +27,35 @@ Workflow file:
 
 ## Quality Gate
 The pipeline ensures that the training script successfully outputs accuracy before allowing the workflow to pass.
+
+## Experiment Comparison
+
+Multiple MLflow runs were executed with different random seeds.  
+The results were exported using `compare_runs.py` into `run_comparison.csv`.
+
+The comparison table contains:
+
+- run start time
+- random seed parameter
+- accuracy metric
+
+These runs allow comparison of model performance across different training seeds.
+
+## Model Selection
+
+The production model is selected based on the highest validation accuracy among the experiment runs recorded in MLflow.
+
+The run with the best accuracy is considered the candidate production model.
+
+## Monitoring and Risks
+
+Potential risks include:
+
+- model accuracy degradation over time
+- data distribution changes
+
+Monitoring strategy:
+
+- continue logging metrics in MLflow
+- trigger alerts if accuracy drops below the validation threshold
+- retrain the model periodically if performance decreases.
