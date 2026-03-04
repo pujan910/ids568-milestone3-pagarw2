@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/pujan/Desktop/ids568-milestone3-pagarw2/mlruns/631471356641941308/6d64ef04aa5443b4a1f68f68d29f558b/artifacts
+end_time: 1772583881746
+entry_point_name: ''
+experiment_id: '631471356641941308'
+lifecycle_stage: active
+run_id: 6d64ef04aa5443b4a1f68f68d29f558b
+run_name: bald-shrike-316
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1772583879936
+status: 3
+tags: []
+user_id: pujan

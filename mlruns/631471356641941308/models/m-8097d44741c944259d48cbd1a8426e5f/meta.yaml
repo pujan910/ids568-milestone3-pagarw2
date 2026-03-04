@@ -1,0 +1,10 @@
+artifact_location: file:///Users/pujan/Desktop/ids568-milestone3-pagarw2/mlruns/631471356641941308/models/m-8097d44741c944259d48cbd1a8426e5f/artifacts
+creation_timestamp: 1772583879958
+experiment_id: '631471356641941308'
+last_updated_timestamp: 1772583881744
+model_id: m-8097d44741c944259d48cbd1a8426e5f
+model_type: null
+name: model
+source_run_id: 6d64ef04aa5443b4a1f68f68d29f558b
+status: 2
+status_message: null
