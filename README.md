@@ -1,4 +1,3 @@
-# ids568-milestone3-pagarw2
 # IDS 568 – Milestone 3: ML Pipeline with CI/CD
 
 This project demonstrates a simple machine learning pipeline with experiment tracking and automated validation using MLflow and GitHub Actions.
